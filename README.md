@@ -6,7 +6,7 @@ Logo is added to the bottom right of the image.
 
 ## Install
 ```
-pip install -U add_logo
+pip install -U addlogo
 ```
 
 ## Use

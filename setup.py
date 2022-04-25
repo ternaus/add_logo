@@ -2,8 +2,8 @@ from pathlib import Path
 
 import setuptools
 
-PACKAGE_NAME = "add_logo"
-VERSION = "0.0.2"
+PACKAGE_NAME = "addlogo"
+VERSION = "0.0.3"
 AUTHOR = "Vladimir Iglovikov"
 EMAIL = "iglovikov@gmail.com"
 DESCRIPTION = "Add logo."
@@ -23,8 +23,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url=GITHUB_URL,
-    package_dir={"add_logo": "."},
-    extras_require={"tests": ["pytest"]},
+    package_dir={"addlogo": "."},
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
