@@ -3,7 +3,7 @@ from pathlib import Path
 import setuptools
 
 PACKAGE_NAME = "add_logo"
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 AUTHOR = "Vladimir Iglovikov"
 EMAIL = "iglovikov@gmail.com"
 DESCRIPTION = "Add logo."
