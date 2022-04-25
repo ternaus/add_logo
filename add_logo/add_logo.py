@@ -16,13 +16,12 @@ def image_resize(
         return image
 
     # check to see if the width is None
-    if width is None and height is not None:
+    if width is None:
         # calculate the ratio of the height and construct the dimensions
         r = height / float(image_height)
         dim = (int(image_width * r), height)
 
-    # otherwise, the height is None
-    elif height is None and width is not None:
+    elif height is None:
         # calculate the ratio of the width and construct the dimensions
         r = width / float(image_width)
         dim = (width, int(image_height * r))
