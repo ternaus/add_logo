@@ -1,6 +1,6 @@
 # Add logo to the image
 
-![](examples/restoration.jpg)
+![](https://habrastorage.org/webt/t4/yz/2l/t4yz2luttp2ehpyju-wnao0vhac.jpeg)
 
 Logo is added to the bottom right of the image.
 
