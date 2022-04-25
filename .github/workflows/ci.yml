@@ -27,7 +27,7 @@ jobs:
       - name: Run flake8
         run: flake8
       - name: Run pylint
-        run: pylint src
+        run: pylint add_logo
       - name: Run isort
         run: isort --profile black add_logo
       - name: Run Mypy

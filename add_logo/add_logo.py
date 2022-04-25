@@ -7,22 +7,26 @@ import numpy as np
 def image_resize(
     image: np.ndarray, width: Optional[int] = None, height: Optional[int] = None, inter: int = cv2.INTER_AREA
 ) -> np.ndarray:
-    # initialize the dimensions of the image to be resized and
-    # grab the image size
+    # initialize the dimensions of the image to be resized and grab the image size
     (image_height, image_width) = image.shape[:2]
 
     # if both the width and height are None, then return the original image
     if width is None and height is None:
         return image
 
-    # check to see if the width is None
-    if width is None and height is not None:
+    if height is not None and width is not None:
+        raise ValueError(
+            f"Height or width parameters should be presented but not both, "
+            f"got width = {width} "
+            f"height = {height}"
+        )
+
+    if height is not None:
         # calculate the ratio of the height and construct the dimensions
         r = height / float(image_height)
         dim = (int(image_width * r), height)
 
-    # otherwise, the height is None
-    elif height is None and width is not None:
+    if width is not None:
         # calculate the ratio of the width and construct the dimensions
         r = width / float(image_width)
         dim = (width, int(image_height * r))
